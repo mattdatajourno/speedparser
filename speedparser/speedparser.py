@@ -27,7 +27,7 @@ from lxml.html import clean
 try:
     import feedparser
 except:
-    from . import feedparsercompat as feedparser
+    from speedparser import feedparsercompat as feedparser
 
 keymap = feedparser.FeedParserDict.keymap
 fpnamespaces = feedparser._FeedParserMixin.namespaces
